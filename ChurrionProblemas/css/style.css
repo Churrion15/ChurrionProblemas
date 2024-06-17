@@ -1,0 +1,365 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 48px;
+    background-color: #cbe3f0;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+}
+
+.vinculo_en_menu {
+    margin: 30px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #666;
+}
+
+.vinculo_en_menu:hover {
+    color: #999;
+}
+
+#toc_container {
+    background: #a5d8e1;
+    color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding: 40px 10px 10px;
+    margin-bottom: 1em;
+    width: 220px;
+    height: 100%;
+    overflow: auto;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    display: table;
+    transform: translateX(-100%);
+}
+
+#toc_container.visible {
+    transform: translateX(0%);
+}
+
+#toc_toggle {
+    position: fixed;
+    width: auto;
+    top: 20px;
+    left: 0px;
+    background: #005b8e;
+    border: 1px solid #666;
+    padding: 10px;
+    cursor: pointer;
+    transition: left 0.3s ease;
+    z-index: 20;
+}
+
+.hidden {
+    transform: translateX(-100%);
+}
+
+.toc_indicator {
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.toc_title {
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #666;
+    font-weight: bold;
+    text-align: center;
+    z-index: 10;
+}
+
+.toc_list {
+    list-style: none;
+    padding: 0;
+}
+
+.toc_sub_list {
+    list-style: none;
+    display: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.toc_sub_list.expanded {
+    display: block;
+}
+
+.toc_list li {
+    margin-bottom: 10px;
+}
+
+.toc_list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.toc_sub_list.active {
+    display: block;
+}
+
+.toc_indicator.rotated {
+    transform: rotate(90deg);
+}
+
+.fading-effect {
+    position: relative;
+    height: 95vh;
+    background-image: url('https://marcianosz.com/wp-content/uploads/2012/11/pinturas_de_locos_19.jpg.webp');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ddd;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 150px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.caja {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    transition: all 300ms;
+}
+
+#texto1 {
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #666;
+}
+
+h1, h2 {
+    color: #1f8dd6;
+    }
+
+.contenido {
+    font-size: 24px;
+}
+
+#imgIntro {
+    border-radius: 5px;
+    height: 30%;
+    width: 30%;
+}
+
+/* Estilo para la tabla dentro del div con clase video-table */
+.video-table table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #333;
+    background-color: #cbe3f0;
+}
+
+/* Estilo para las celdas */
+.video-table th, .video-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo para todas las filas */
+.video-table tbody tr {
+    background-color: #a5d8e1;
+}
+
+#imgTipos {
+    border-radius: 5px;
+    width: 25%;
+    height: 10%;
+}
+
+#imgCausas {
+    border-radius: 5px;
+    width: 35%;
+    height: 40%;
+}
+
+#imgResolver {
+    border-radius: 5px;
+    width: 40%;
+    height: 80%;
+}
+
+#finalimg {
+    border-radius: 5px;
+    height: 250px;
+    width: 700px;
+}
+
+/* Estilo para el título de las preguntas frecuentes */
+#Frecuentes_title {
+    color: #fff;
+    font-size: 80px;
+}
+
+/* Estilo general del bloque de preguntas frecuentes */
+.preguntas_frecuentes {
+    background-color: #66a3d2;
+    color: #ccc;
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+
+/* Estilo de los elementos <details> que contienen las preguntas y respuestas */
+.preguntas_frecuentes details {
+    border: 1px solid #666;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+/* Estilo de los elementos <summary> que contienen las preguntas */
+.preguntas_frecuentes summary {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #1f8dd6;
+    user-select: none;
+}
+
+/* Estilo de los elementos <p> que contienen las respuestas */
+.preguntas_frecuentes p {
+    padding: 10px;
+    margin: 0;
+    color: #333;
+    background-color: #cbe3f0;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+details>summary {
+    cursor: pointer;
+}
+
+details>p {
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+    overflow: hidden;
+}
+
+/* Cuando <details> esté abierto, cambiamos la visibilidad a visible y aplicamos la animación */
+details[open]>p {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
+    visibility: visible;
+}
+
+/* Estilos para la Sección de Testimonios */
+.testimonios {
+    background-color: #1f8dd6;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+#testimonios_title {
+    color: white;
+    font-size: 60px;
+}
+
+.testimonio {
+    background-color: #57a3c1;
+    font-size: 25px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.mensaje {
+    font-style: italic;
+}
+
+.autor {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Estilo para la Sección de Recursos y Apoyo */
+#recursos-apoyo {
+    background-color: #66a3d2;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: #333;
+    font-size: 25px;
+}
+
+#recursos-apoyo h2 {
+    color: #1f8dd6;
+    text-align: center;
+}
+
+#recursos-apoyo p {
+    font-size: 25px;
+    color: #666;
+    text-align: justify;
+}
+
+#recursos-apoyo ul {
+    list-style: none;
+    padding: 0;
+}
+
+#recursos-apoyo li {
+    margin-bottom: 10px;
+}
+
+#recursos-apoyo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#recursos-apoyo a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el botón */
+.boton-menu {
+    align-content: center;
+    background-color: #1f8dd6;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+/* Cambio de color al pasar el ratón */
+.boton-menu:hover {
+    background-color: #005b8e;
+}
