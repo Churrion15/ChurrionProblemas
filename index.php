@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>PROBLEAS PSICOLÓGICOS - Churrion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="shorcut icon" href="img/nigga.jpeg">
 </head>
 
 <body>
@@ -234,7 +234,6 @@
       <center><img id="finalimg" src="img/autoretrato_17.jpg" alt=""></center>
       <hr>
     </h4>
-
   <br><br><br><br><br>
   <div class="preguntas_frecuentes">
     <h1 id="Frecuentes_title">Preguntas Frecuentes</h1>
@@ -287,13 +286,11 @@
       <p>El trastorno obsesivo-compulsivo es un trastorno de ansiedad que se caracteriza por la presencia de pensamientos intrusivos, irracionales y recurrentes (obsesiones) que generan una gran angustia, y de comportamientos repetitivos, ritualizados y compulsivos (compulsiones) que se realizan para aliviar esa angustia. El trastorno obsesivo-compulsivo nos impide llevar una vida normal, ya que consume mucho tiempo, energía y recursos, y afecta a nuestra salud, trabajo, relaciones y ocio. Para controlar el trastorno obsesivo-compulsivo, se recomienda buscar ayuda profesional, seguir una terapia cognitivo-conductual o una terapia de exposición y prevención de respuesta, tomar medicación si es necesario, practicar técnicas de relajación, y educarse sobre el trastorno y sus consecuencias.</p>
     </details>
   </div>
-
   <br><br><br><br><br>
   <!-- Sección de Recursos y Apoyo -->
   <div id="recursos-apoyo">
     <h2>Recursos y Apoyo</h2>
     <p>Si tú o alguien que conoces está enfrentando problemas psicológicos, no estás solo. Aquí encontrarás una lista de recursos confiables que ofrecen apoyo y asistencia:</p>
-
     <!-- Lista de Recursos -->
     <ul>
       <li><a href="https://www.paho.org/es/temas/salud-mental" target="_blank">Organización Panamericana de la Salud - Recursos de salud mental</a></li>
@@ -303,9 +300,7 @@
       <li><a href="https://www.nimh.nih.gov/health/find-help/ayuda-para-la-salud-mental" target="_blank">National Institute of Mental Health - Ayuda para la salud mental</a></li>
     </ul>
   </div>
-
   <br>
-
   <!-- Boton para ir al menú de los cuestionarios -->
   <center>
     <div id="cuestionario">
@@ -316,6 +311,6 @@
 
   <br>
 
+  <script src="js/main.js"></script>
 </body>
-
 </html>

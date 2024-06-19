@@ -5,6 +5,10 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 include"config.php";
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +19,7 @@ include"config.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/principlacues.css" />
   <meta name="google" content="notranslate" />
+  <link rel="shorcut icon" href="img/nigga.jpeg">
   <title>Cuestionarios</title>
 </head>
 
